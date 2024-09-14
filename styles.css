@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0F1E7;
+}
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 20px;
+    color: #F7FFFF;
+    height: auto;
+    width: 400px;
+    background-color: #2A4244;
+    padding: 20px 25px;
+    border-radius: 10px;
+    animation: slideDown 0.5s ease-out forwards;
+    display: none;
+}
+
+.success-container p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.success-container h2 {
+    display: flex;
+    gap: 10px;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+.error-message {
+    color: #D32F2F;
+    display: none;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+@keyframes slide-in {
+    0%{
+
+    }
+}
+
+#error{
+    color: #D32F2F;
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nameSection {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    height: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.radio-item input{
+    outline: none;
+}
+
+input:hover{
+    border: 1px solid #0C7D69;
+}
+#email-input {
+    height: 50px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#email-input{
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+.email-input label {
+    font-weight: bold;
+}
+
+.radio-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.radio-item {
+    height: 50px;
+    border-radius: 5px;
+    width: 49%;
+    cursor: pointer;
+}
+
+.Query {
+    font-weight: bold;
+}
+
+
+#boxMessege {
+    margin-top: 20px;
+}
+.boxMessege {
+    font-weight: bold;
+}
+
+.agaree{
+    display: flex;
+    gap: 15px;
+}
+.agaree input{
+    height: 20px;
+    width: 20px;
+}
+.agaree p{
+    position: absolute;
+    margin-top: 25px;
+}
+
+
+
+textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+}
+.second{
+    margin-left: 15px;
+}
+button {
+    height: 50px;
+    font-size: 18px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    background-color: #0C7D69;
+    margin-top: 20px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border: 1px solid #0C7D69;
+    border-color: #0C7D69;
+    outline-color: #0C7D69;
+    outline-width: 2px;
+    cursor: pointer;
+}
+
+span{
+    color: #0C7D69;
+}
+
+.input-group input {
+    border: 1px solid #ccc; 
+    background-color: #FFFFFF;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: #0C7D69;
+    outline-color: #0C7D69;
+    outline-width: 2px;
+}
+
+input:invalid:focus, 
+input:focus:invalid {
+    border-color: #D32F2F;
+    outline-color: #D32F2F;
+    background-image: url('./images/red_cheaked.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 15px);
+}
+
+input:invalid:not(:focus) {
+    border-color: #ccc; 
+}
+
+input:valid{
+    border-color: #0C7D69;
+    background-image: url('./images/green_cheaked.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 18px);
+}
+
+.radio-item [type="radio"] {
+	display: none;
+}
+
+.radio-item label {
+	display: block;
+	padding: 15px 60px;
+	background: transparent;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	min-width: 250px;
+	white-space: nowrap;
+	position: relative;
+	transition: background-color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+
+
+.radio-item input:checked + label,
+.radio-item input:focus + label {
+	background-color: #E0F1E7; 
+	border-color: #0C7D69; 
+}
+
+.radio-item label:after,
+.radio-item label:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+}
+
+.radio-item label:after {
+	height: 19px;
+	width: 19px;
+	border: 2px solid #0C7D69;
+	left: 19px;
+}
+
+.radio-item label:before {
+	background: #0C7D69;
+	height: 20px;
+	width: 20px;
+	left: 21px;
+	transform: scale(5);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s ease-in-out;
+    border: 1px solid  #0C7D69;
+}
+
+.radio-item input:checked + label::before {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+

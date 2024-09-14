@@ -1,0 +1,43 @@
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-container {
+        width: 90%;
+    }
+
+    .radio-item {
+        width: 45%;
+    }
+    .success-container {
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .main-container {
+        width: 50%;
+    }
+    .success-container {
+        width: 400px;
+    }
+
+    button {
+        width: auto;
+    }
+}
+
+@media (min-width: 360px) and (max-width : 600px) {
+    .radio-list{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .radio-item {
+        width: 100%;
+        border: none;
+    }
+    .second{
+        margin-right: 15px;
+
+    }
+}
